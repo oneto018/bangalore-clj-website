@@ -1,20 +1,26 @@
-{:title "Contribute"
- :layout :page
- :page-index 0
- :navbar? true}
-
+{:tags ["contribute"],
+ :navbar? true,
+ :layout :page,
+ :page-index 0,
+ :title "Contribute",
+ :author " ",
+ :file-name "contribute.md"}
 ## General
 
 [The Git repo of this website is hosted here](https://github.com/bangalore-clj/bangalore-clj-website).
 
 Please send a pull-request for any contribution. Below are different ways to contribute. Before sending PRs, please test the changes by running the application on your local machine:
 ```
-lein ring server
+lein with-profile admin ring server
 ```
 
 This website has been built using [Cryogen](http://cryogenweb.org/index.html). You can visit the detailed documentation at [Cryogen documentation](http://cryogenweb.org/docs/home.html) page in case you have any doubts. Or, you can email us on `bangaloreclojure@gmail.com`
 
+## Use admin ui
 
+go to [http://localhost:3000/admin](http://localhost:3000/admin) for a minimal ui you can use to create/edit posts or pages
+
+you could also edit the files directly by following the instructions below
 
 ## Writing a post (article)
 

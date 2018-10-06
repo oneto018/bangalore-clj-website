@@ -8,8 +8,11 @@
                            [compojure "1.6.0"]
                            [ring-server "0.5.0"]
                            [cryogen-markdown "0.1.7"]
-                           [cryogen-core "0.1.61"]]
+                           [cryogen-core "0.1.61"]
+                           [cryogen-admin-ui-md "0.1.0-SNAPSHOT"]]
             :plugins [[lein-ring "0.9.7"]]
             :main bangalore-clojure-group.core
             :ring {:init bangalore-clojure-group.server/init
-                   :handler bangalore-clojure-group.server/handler})
+                   :handler bangalore-clojure-group.server/handler}
+            :profiles {:admin 
+                        {:ring {:handler cryogen-admin-ui-md.handler/handler-with-admin}}})
